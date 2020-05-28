@@ -1,0 +1,22 @@
+2020-05-28 13:28:31,921 ERROR: Exception on /update [POST] [in c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py:1758]
+Traceback (most recent call last):
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Asus\Desktop\xyz\app\routes.py", line 80, in update
+    employee.name = form.name.data
+AttributeError: 'NoneType' object has no attribute 'name'
+2020-05-28 13:41:35,034 INFO: Microblog startup [in C:\Users\Asus\Desktop\xyz\app\__init__.py:43]
+2020-05-28 13:44:34,374 INFO: Microblog startup [in C:\Users\Asus\Desktop\xyz\app\__init__.py:43]
+2020-05-28 14:10:59,509 INFO: Microblog startup [in C:\Users\Asus\Desktop\xyz\app\__init__.py:43]

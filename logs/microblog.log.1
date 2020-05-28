@@ -1,0 +1,135 @@
+2020-05-27 22:07:35,672 ERROR: Exception on /index [GET] [in c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py:1758]
+Traceback (most recent call last):
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Asus\Desktop\xyz\app\routes.py", line 16, in index
+    return render_template('index.html', user=current_user, employees=employees)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Asus\Desktop\xyz\app\templates\index.html", line 1, in <module>
+    {% extends "base.html" %}
+  File "C:\Users\Asus\Desktop\xyz\app\templates\base.html", line 29, in <module>
+    {% block content %}{% endblock %}
+  File "C:\Users\Asus\Desktop\xyz\app\templates\index.html", line 12, in <module>
+    {% include '_employee.html' %}
+  File "C:\Users\Asus\Desktop\xyz\app\templates\_employee.html", line 17, in <module>
+    <td>{{ employee.id }}</td>
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\jinja2\environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'employee' is undefined
+2020-05-27 22:07:38,273 ERROR: Exception on /index [GET] [in c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py:1758]
+Traceback (most recent call last):
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Asus\Desktop\xyz\app\routes.py", line 16, in index
+    return render_template('index.html', user=current_user, employees=employees)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Asus\Desktop\xyz\app\templates\index.html", line 1, in <module>
+    {% extends "base.html" %}
+  File "C:\Users\Asus\Desktop\xyz\app\templates\base.html", line 29, in <module>
+    {% block content %}{% endblock %}
+  File "C:\Users\Asus\Desktop\xyz\app\templates\index.html", line 12, in <module>
+    {% include '_employee.html' %}
+  File "C:\Users\Asus\Desktop\xyz\app\templates\_employee.html", line 17, in <module>
+    <td>{{ employee.id }}</td>
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\jinja2\environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'employee' is undefined
+2020-05-27 22:07:47,827 ERROR: Exception on /index [GET] [in c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py:1758]
+Traceback (most recent call last):
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Asus\Desktop\xyz\app\routes.py", line 16, in index
+    return render_template('index.html', user=current_user, employees=employees)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Asus\Desktop\xyz\app\templates\index.html", line 1, in <module>
+    {% extends "base.html" %}
+  File "C:\Users\Asus\Desktop\xyz\app\templates\base.html", line 29, in <module>
+    {% block content %}{% endblock %}
+  File "C:\Users\Asus\Desktop\xyz\app\templates\index.html", line 12, in <module>
+    {% include '_employee.html' %}
+  File "C:\Users\Asus\Desktop\xyz\app\templates\_employee.html", line 17, in <module>
+    <td>{{ employee.id }}</td>
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\jinja2\environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'employee' is undefined
+2020-05-27 22:08:07,242 INFO: Microblog startup [in C:\Users\Asus\Desktop\xyz\app\__init__.py:43]
+2020-05-27 22:21:21,612 INFO: Microblog startup [in C:\Users\Asus\Desktop\xyz\app\__init__.py:43]
+2020-05-27 22:41:45,401 INFO: Microblog startup [in C:\Users\Asus\Desktop\xyz\app\__init__.py:43]
+2020-05-27 22:42:58,799 INFO: Microblog startup [in C:\Users\Asus\Desktop\xyz\app\__init__.py:43]
+2020-05-27 22:43:55,097 INFO: Microblog startup [in C:\Users\Asus\Desktop\xyz\app\__init__.py:43]
+2020-05-27 22:44:43,863 INFO: Microblog startup [in C:\Users\Asus\Desktop\xyz\app\__init__.py:43]
+2020-05-27 22:47:15,189 INFO: Microblog startup [in C:\Users\Asus\Desktop\xyz\app\__init__.py:43]
+2020-05-27 22:47:47,266 INFO: Microblog startup [in C:\Users\Asus\Desktop\xyz\app\__init__.py:43]
+2020-05-27 22:48:23,757 INFO: Microblog startup [in C:\Users\Asus\Desktop\xyz\app\__init__.py:43]
+2020-05-28 02:29:56,763 INFO: Microblog startup [in C:\Users\Asus\Desktop\xyz\app\__init__.py:43]
+2020-05-28 02:55:50,185 INFO: Microblog startup [in C:\Users\Asus\Desktop\xyz\app\__init__.py:43]
+2020-05-28 13:27:45,750 INFO: Microblog startup [in C:\Users\Asus\Desktop\xyz\app\__init__.py:43]

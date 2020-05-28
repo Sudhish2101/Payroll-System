@@ -1,0 +1,130 @@
+2020-05-27 14:23:33,893 ERROR: Exception on /delete [POST] [in c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py:1758]
+Traceback (most recent call last):
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1742, in delete
+    state = attributes.instance_state(instance)
+AttributeError: 'BaseQuery' object has no attribute '_sa_instance_state'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Asus\Desktop\xyz\app\routes.py", line 101, in delete
+    db.session.delete(employee)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1744, in delete
+    raise exc.UnmappedInstanceError(instance)
+sqlalchemy.orm.exc.UnmappedInstanceError: Class 'flask_sqlalchemy.BaseQuery' is not mapped
+2020-05-27 14:24:07,277 INFO: Microblog startup [in C:\Users\Asus\Desktop\xyz\app\__init__.py:43]
+2020-05-27 14:24:55,195 ERROR: Exception on /delete [POST] [in c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py:1758]
+Traceback (most recent call last):
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1742, in delete
+    state = attributes.instance_state(instance)
+AttributeError: 'BaseQuery' object has no attribute '_sa_instance_state'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Asus\Desktop\xyz\app\routes.py", line 101, in delete
+    db.session.delete(employee)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1744, in delete
+    raise exc.UnmappedInstanceError(instance)
+sqlalchemy.orm.exc.UnmappedInstanceError: Class 'flask_sqlalchemy.BaseQuery' is not mapped
+2020-05-27 14:25:34,107 ERROR: Exception on /delete [POST] [in c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py:1758]
+Traceback (most recent call last):
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1742, in delete
+    state = attributes.instance_state(instance)
+AttributeError: 'BaseQuery' object has no attribute '_sa_instance_state'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Asus\Desktop\xyz\app\routes.py", line 101, in delete
+    db.session.delete(employee)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1744, in delete
+    raise exc.UnmappedInstanceError(instance)
+sqlalchemy.orm.exc.UnmappedInstanceError: Class 'flask_sqlalchemy.BaseQuery' is not mapped
+2020-05-27 14:26:42,990 INFO: Microblog startup [in C:\Users\Asus\Desktop\xyz\app\__init__.py:43]
+2020-05-27 20:13:24,300 INFO: Microblog startup [in C:\Users\Asus\Desktop\xyz\app\__init__.py:43]
+2020-05-27 20:15:01,391 ERROR: Exception on /delete [POST] [in c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py:1758]
+Traceback (most recent call last):
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1742, in delete
+    state = attributes.instance_state(instance)
+AttributeError: 'NoneType' object has no attribute '_sa_instance_state'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Asus\Desktop\xyz\app\routes.py", line 101, in delete
+    db.session.delete(employee)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "c:\users\asus\desktop\xyz\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1744, in delete
+    raise exc.UnmappedInstanceError(instance)
+sqlalchemy.orm.exc.UnmappedInstanceError: Class 'builtins.NoneType' is not mapped
+2020-05-27 20:22:32,598 INFO: Microblog startup [in C:\Users\Asus\Desktop\xyz\app\__init__.py:43]
+2020-05-27 20:24:51,848 INFO: Microblog startup [in C:\Users\Asus\Desktop\xyz\app\__init__.py:43]
+2020-05-27 20:25:52,042 INFO: Microblog startup [in C:\Users\Asus\Desktop\xyz\app\__init__.py:43]
+2020-05-27 20:27:22,507 INFO: Microblog startup [in C:\Users\Asus\Desktop\xyz\app\__init__.py:43]
+2020-05-27 20:27:38,986 INFO: Microblog startup [in C:\Users\Asus\Desktop\xyz\app\__init__.py:43]
+2020-05-27 22:04:49,986 INFO: Microblog startup [in C:\Users\Asus\Desktop\xyz\app\__init__.py:43]
+2020-05-27 22:07:31,642 INFO: Microblog startup [in C:\Users\Asus\Desktop\xyz\app\__init__.py:43]

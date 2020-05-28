@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>User: Admin </h1>
+    <div>
+        Options:
+        <a href="{{ url_for('add') }}">Add</a>
+        <a href="{{ url_for('update') }}">Update</a>
+        <a href="{{ url_for('delete') }}">Delete</a>
+    </div>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          table-layout: fixed;
+        }
+      </style> 
+      <table style="width:100%">
+        <tr>
+            <th>Id</th>
+            <th>Name</th> 
+            <th>Hourly pay</th>
+            <th>Hours worked</th>
+            <th>Allowance</th>
+            <th>Deduction</th>
+            <th>Net Salary</th>
+        </tr>
+       </table>   
+    {% for employee in employees %}
+        {% include '_employee.html' %}
+    {% endfor %}    
+{% endblock %}
